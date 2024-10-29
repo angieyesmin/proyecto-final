@@ -1,22 +1,4 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+/*----------------------*/
 /* Header */
 .header {
   background-color: #fff3cd;
@@ -24,22 +6,36 @@ body {
   padding: 10px 0;
 }
 
-.logo {
+.logo-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 30px 0; /* Aumentado para mayor espacio */
+}
+
+.logo-text {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0; /* Espacio abajo del logo */
+  font-weight: bold;
+}
+
+.sub-text {
+  color: #333;
+  font-size: 1rem;
 }
 
 .navbar {
   background-color: #ffa500;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-  gap: 20px;
+  padding: 15px 0; /* Aumentado para más separación */
+  gap: 30px;
+  margin-top: 30px; /* Aumenta el margen superior para separarlo del logo */
 }
 
 .navbar a {
-  color: #000; /* Cambia el color de las letras a negro */
+  color: #333;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -49,23 +45,33 @@ body {
   color: #007bff;
 }
 
-/* Main Content */
+/* Imagen destacada */
+.hero-image {
+  width: 100%;
+  height: 300px;
+  background: url('ruta/a/tu/imagen.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido principal */
 .main-content {
-  padding: 40px 20px;
+  padding: 60px 20px; /* Aumentado para más separación */
   text-align: center;
 }
 
 .main-content h2 {
   font-size: 1.8rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Galería de adopción */
 .gallery {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
@@ -76,6 +82,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 200px;
   text-align: center;
+  margin: 20px 0; /* Para añadir separación vertical */
 }
 
 .card img {
@@ -88,7 +95,7 @@ body {
 .btn {
   margin-top: 10px;
   background-color: #f4a261;
-  color: #000; /* Letra en negro */
+  color: #333; /* Letra en negro */
   font-weight: bold;
   border: none;
   padding: 10px 15px;
@@ -109,5 +116,7 @@ body {
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
-  margin-top: 40px;
+  margin-top: 40px; /* Aumentado para separarlo del contenido principal */
 }
+
+
