@@ -3,19 +3,27 @@ import Login from './pages/login';
 import Home from './Components/Home';
 import Contacnos from './pages/Contacnos'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Footer from './Components/Footer'; 
 
 
 
 function App() {
   return (
-    <Router>
+    <>   
+
+     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contactanos" element={<Contacnos />} />
       </Routes>
     </Router>
+
+
+    <Footer />
+    </>
+    
+
   );
 }
 

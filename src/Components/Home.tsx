@@ -18,6 +18,7 @@ function App() {
               <Link className="navbar-brand" to="#"> Adoptar Mascotas</Link>
               <Link className="navbar-brand" to="#"> Donar</Link>
               <Link className="navbar-brand" to="#"> GPS</Link>
+              <Link className="navbar-brand" to="#"> Campañas</Link>
             </div>
           </nav>
         </header>
@@ -53,15 +54,15 @@ function App() {
           <h2>Encuentra y Adopta</h2>
           <div className="gallery">
             <div className="card">
-              <img src="https://placekitten.com/200/150" alt="Pelusa" />
+              <img src="./images/Catalogo/Bella.jpeg" alt="Pelusa" />
               <button className="btn">PELUSA</button>
             </div>
             <div className="card">
-              <img src="https://place-puppy.com/200x150" alt="Jorgito y Clararita" />
+              <img src="./images/Catalogo/Bruno.jpg" alt="Jorgito y Clararita" />
               <button className="btn">JORGITO Y CLARARITA</button>
             </div>
             <div className="card">
-              <img src="https://place-puppy.com/200x150" alt="Max" />
+              <img src="./images/Catalogo/Daisy.jpeg" alt="Max" />
               <button className="btn">MAX</button>
             </div>
           </div>
